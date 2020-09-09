@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>random-game</title>    
+    </head>
+    <body>
+        <canvas id="base" width="400" height="400"></canvas>
+
+        <style type="text/css">
+            canvas { border: 1px solid#bfa55e; }
+        </style>
+        
+        <script src="index.js"></script>
+        <input type="color" id="color">
+        <input type="button" value="< Previous frame" onclick="previousFrame()">
+        <input type="button" value="Run" onclick="run()">
+        <input type="button" value="Next frame >" onclick="nextFrame()">
+
+        <li style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+            Frame atual : <b id="atual">1</b>
+        </li>
+    </body>
+</html>
